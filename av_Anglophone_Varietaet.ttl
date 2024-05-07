@@ -6,67 +6,67 @@
 n1:y9a
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "1";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Standardsprache"@de.
 n1:r7h
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "2";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Amerikanisch"@de.
 n1:g3p
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "3";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Australisch"@de.
 n1:d7r
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "4";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Irisch"@de.
 n1:q4s
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "5";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Kanadisch"@de.
 n1:c9p
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "6";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Kreolisch"@de.
 n1:p4p
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "7";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Nigerianisch"@de.
 n1:y5a
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "8";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Neuseeländisch"@de.
 n1:t6y
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "9";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Schottisch"@de.
 n1:a4f
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "10";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Südafrikanisch"@de.
 n1:c9c
 	 a skos:Concept;
 	skos:inScheme n0:;
-	skos:notation "";
+	skos:notation "11";
 	skos:topConceptOf n0:;
 	skos:prefLabel "Walisisch"@de.
 n0:
