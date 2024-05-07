@@ -1,88 +1,21 @@
-@base <https://w3id.org/iqb/v25/av/>.
-@prefix dct: <http://purl.org/dc/terms/>.
-@prefix skos: <http://www.w3.org/2004/02/skos/core#>. 
-@prefix n0: <https://w3id.org/iqb/v25/av/>. 
-@prefix n1: <https://w3id.org/iqb/v25/av/>. 
+@prefix ex: <http://example.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 
-n1:y9a
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "1";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Standardsprache"@de.
-n1:r7h
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "2";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Amerikanisch"@de.
-n1:g3p
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "3";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Australisch"@de.
-n1:d7r
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "4";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Irisch"@de.
-n1:q4s
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "5";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Kanadisch"@de.
-n1:c9p
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "6";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Kreolisch"@de.
-n1:p4p
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "7";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Nigerianisch"@de.
-n1:y5a
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "8";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Neuseeländisch"@de.
-n1:t6y
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "9";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Schottisch"@de.
-n1:a4f
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "10";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Südafrikanisch"@de.
-n1:c9c
-	 a skos:Concept;
-	skos:inScheme n0:;
-	skos:notation "11";
-	skos:topConceptOf n0:;
-	skos:prefLabel "Walisisch"@de.
-n0:
-	a skos:ConceptScheme;
-	dct:creator "IQB - Institut zur Qualitätsentwicklung im Bildungswesen"@de;
-	dct:title "Textvorgabe Fremdsprachen - Anglophone Varietät"@de;
-	skos:hasTopConcept
-		n1:y9a,
-		n1:r7h,
-		n1:g3p,
-		n1:d7r,
-		n1:q4s,
-		n1:c9p,
-		n1:p4p,
-		n1:y5a,
-		n1:t6y,
-		n1:a4f,
-		n1:c9c.
+ex: a skos:ConceptScheme ;
+  dct:title "Meine Farben"@de ;
+  dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+  skos:hasTopConcept ex:blau ;
+  .
+
+ex:blau a skos:Concept ;
+  skos:prefLabel "blau"@de ;
+  skos:definition "Meine Definition"@de ;
+  skos:example "Mein Beispiel"@de ;
+  skos:narrower ex:hellblau ;
+  skos:topConceptOf ex: ;
+  .
+  
+ex:hellblau a skos:Concept ;
+  skos:broader ex:blau ; # Inversion von `skos:narrower`
+  skos:inScheme ex: .
