@@ -5,17 +5,9 @@
 ex: a skos:ConceptScheme ;
   dct:title "Meine Farben"@de ;
   dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
-  skos:hasTopConcept ex:blau ;
   .
 
 ex:blau a skos:Concept ;
   skos:prefLabel "blau"@de ;
   skos:definition "Meine Definition"@de ;
-  skos:example "Mein Beispiel"@de ;
-  skos:narrower ex:hellblau ;
-  skos:topConceptOf ex: ;
   .
-  
-ex:hellblau a skos:Concept ;
-  skos:broader ex:blau ; # Inversion von `skos:narrower`
-  skos:inScheme ex: .
