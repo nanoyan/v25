@@ -1,0 +1,119 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>. 
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix n0: <https://w3id.org/iqb/v34/new/>. 
+@prefix n1: <https://w3id.org/iqb/v34/new/>. 
+
+n1:r4g
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 1.1";
+	skos:broader n1:c7g;
+	skos:prefLabel "erklären Phänomene unter Nutzung bekannter physikalischer Modelle und Theorien;"@de.
+n1:b9t
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 1.2";
+	skos:broader n1:c7g;
+	skos:prefLabel "beschreiben einfache Modelle, deren Aussage- und Vorhersagemöglichkeiten sowie deren Grenzen."@de.
+n1:c7g
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 1";
+	skos:broader n1:s3h;
+	skos:prefLabel "Modelle und Theorien zur Bearbeitung von Aufgaben und Problemen nutzen"@de; 
+	skos:definition "Die Lernenden…"@de;
+	skos:narrower 
+		n1:r4g,
+		n1:b9t.
+n1:q2r
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 2.1";
+	skos:broader n1:z3p;
+	skos:prefLabel "bauen einfache Versuchsanordnungen auch unter Verwendung von digitalen Messwerterfassungssystemen nach Anleitungen auf, führen Experimente durch und protokollieren ihre Beobachtungen;"@de.
+n1:t9p
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 2.2";
+	skos:broader n1:z3p;
+	skos:prefLabel "erklären bekannte Messverfahren sowie die Funktion einzelner Komponenten eines Versuchsaufbaus;"@de.
+n1:a6b
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 2.3";
+	skos:broader n1:z3p;
+	skos:prefLabel "wenden bekannte Auswerteverfahren auf Messergebnisse an;"@de.
+n1:s4x
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 2.4";
+	skos:broader n1:z3p;
+	skos:prefLabel "wenden bekannte mathematische Verfahren auf physikalische Fragestellungen und Probleme an."@de.
+n1:z3p
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S 2";
+	skos:broader n1:s3h;
+	skos:prefLabel "Verfahren und Experimente zur Bearbeitung von Aufgaben und Problemen nutzen"@de; 
+	skos:definition "Die Lernenden…"@de;
+	skos:narrower 
+		n1:q2r,
+		n1:t9p,
+		n1:a6b,
+		n1:s4x.
+n1:s3h
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "S";
+	skos:topConceptOf n0:;
+	skos:prefLabel "Sachkompetenz"@de;
+	skos:narrower 
+		n1:c7g,
+		n1:z3p.
+n1:z5s
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "E 1.1";
+	skos:broader n1:g9u;
+	skos:prefLabel "beobachten und beschreiben physikalische Phänomene oder Sachverhalte;"@de.
+n1:t7d
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "E 1.2";
+	skos:broader n1:g9u;
+	skos:prefLabel "identifizieren und formulieren Fragestellungen zu physikalischen Sachverhalten;"@de.
+n1:v2e
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "E 1.3";
+	skos:broader n1:g9u;
+	skos:prefLabel "stellen Hypothesen zur Bearbeitung von Fragestellungen auf."@de.
+n1:g9u
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "E 1";
+	skos:broader n1:a7s;
+	skos:prefLabel "Fragestellungen und Hypothesen auf Basis von Beobachtungen und theoretischen Überlegungen bilden"@de; 
+	skos:definition "Die Lernenden…"@de;
+	skos:narrower 
+		n1:z5s,
+		n1:t7d,
+		n1:v2e.
+n1:a7s
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "E";
+	skos:topConceptOf n0:;
+	skos:prefLabel "Erkenntnisgewinnungskompetenz"@de;
+	skos:narrower 
+		n1:g9u.
+n0:
+	a skos:ConceptScheme;
+	dct:creator "IQB - Institut zur Qualitätsentwicklung im Bildungswesen"@de;
+	dct:title "Vokabulare zur Beschreibung des Itemformates - New format"@de;
+	dc:title "Vokabulare zur Beschreibung des Itemformates - New format"@de;
+	dc:description "Vokabulare zur Beschreibung des Itemformates - New format"@de;
+	skos:hasTopConcept
+		n1:s3h,
+		n1:a7s.
