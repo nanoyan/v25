@@ -1,0 +1,36 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>. 
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix n0: <https://w3id.org/iqb/v34/5e/>. 
+@prefix n1: <https://w3id.org/iqb/v34/5e/>. 
+
+n1:see
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "";
+	skos:topConceptOf n0:;
+	skos:prefLabel "GA - Geschlossen Ankreuzen"@de.
+n1:ud7
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "";
+	skos:topConceptOf n0:;
+	skos:prefLabel "GK - Geschlossen Kodieren"@de.
+n1:q7b
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "";
+	skos:topConceptOf n0:;
+	skos:prefLabel "0/1 - Einfach dichotom"@de.
+n1:p2a
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "";
+	skos:topConceptOf n0:;
+	skos:prefLabel "1+ - Mehrere Variablen und/oder Codes"@de.
+n0:
+	a skos:ConceptScheme;
+	dct:creator "IQB - Institut zur Qualitätsentwicklung im Bildungswesen"@de;
+	dct:title "Vokabulare zur Beschreibung des Itemformates - Itemformat 5er Liste"@de;
+	dct:description "Itemformat 5er Liste description"@de;
+	skos:hasTopConcep.
