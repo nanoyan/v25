@@ -1,0 +1,47 @@
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>. 
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix n0: <https://w3id.org/iqb/v34/mu/>. 
+@prefix n1: <https://w3id.org/iqb/v34/mu/>. 
+
+n1:p3g
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "";
+	skos:topConceptOf n0:;
+	skos:prefLabel "geschlossen"@de,
+	"closed"@en; 
+	skos:definition "desc de"@de,
+	"desc en"@en.
+n1:u5e
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "";
+	skos:topConceptOf n0:;
+	skos:prefLabel "halfoffen"@de,
+	"half open"@en; 
+	skos:definition "desc de"@de,
+	"desc en"@en.
+n1:e4a
+	 a skos:Concept;
+	skos:inScheme n0:;
+	skos:notation "";
+	skos:topConceptOf n0:;
+	skos:prefLabel "offen"@de,
+	"open"@en; 
+	skos:definition "desc de"@de,
+	"desc en"@en.
+n0:
+	a skos:ConceptScheme;
+	dct:creator "IQB - Institut zur Qualitätsentwicklung im Bildungswesen"@de,
+	"IQB - Institut zur Qualitätsentwicklung im Bildungswesen"@en;
+	dct:title "Vokabulare zur Beschreibung des Itemformates - Multilang Itemformat 3er Liste"@de,
+	"Descriptive vocabulary for itemformat - Multilang List of 3 Itemformat"@en;
+	dc:title "Vokabulare zur Beschreibung des Itemformates - Multilang Itemformat 3er Liste"@de,
+	"Descriptive vocabulary for itemformat - Multilang List of 3 Itemformat"@en;
+	dc:description "Vokabulare zur Beschreibung des Itemformates - Multilang Itemformat 3er Liste"@de,
+	"Descriptive vocabulary for itemformat - Multilang List of 3 Itemformat"@en;
+	skos:hasTopConcept
+		n1:p3g,
+		n1:u5e,
+		n1:e4a.
